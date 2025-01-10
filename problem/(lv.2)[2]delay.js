@@ -9,7 +9,14 @@
  */
 
 // TODO: delay 함수를 작성하세요.
-async function delay(ms) {}
+
+// const promiseA = new Promise((resolve) => setTimeout(() => resolve('A'), 100));
+
+async function delay(ms) {
+    return new Promise((resolve) => {
+        setTimeout(() => resolve("done"),ms)
+    })
+}
 
 // export를 수정하지 마세요.
 export { delay };
